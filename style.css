@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+body {
+    padding: 0.3rem;
+    /* background-color: rgba(0, 0, 255, 0.801); */
+    margin-top: 1rem;
+
+
+    background: linear-gradient(-45deg, #23A6D5, #E73C7E, #23D5AB, #EE7652
+
+
+    );
+    
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    opacity: 0.9;
+    
+}
+
+.busca {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 90vh; */
+    border-radius: 7px;
+    margin-top: 1rem;
+}
+
+.busca h1 {
+    margin-top: 0.6rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.busca img {
+    margin: 0.5rem;
+}
+
+.busca .graus {
+    font-size: 2.2rem;
+}
+.busca .sens_termica {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+}
+
+.busca .min_max {
+    display: flex;
+    gap: 1rem;
+}
+
+.busca .temp_min, .temp_max {
+    font-size: 0.8rem;
+}
+
+.out_inf {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.out_inf img {
+    width: 25px;
+}
+
+
+/* Estilos para a lista de sugestões */
+.suggestions-list {
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 4px;
+  }
+  
+  .suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Esconder a lista quando não houver sugestões */
+  .hidden {
+    display: none;
+  }
+
+
+  @keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+  
+  
+
+  @media screen and (min-width: 600px) {
+    body {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+    width: 50%;
+    max-width: 500px;
+  }
+}
