@@ -18,5 +18,5 @@
 </p>
 
 ### 🔗 Veja o Projeto
-https://borsatole.github.io/ClimaTempo/
+https://borsatole.github.io/ClimaTempoAPIopenweathermap/
 
